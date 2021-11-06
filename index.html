@@ -9,19 +9,30 @@
 </head>
 <body>
     <section>
-        <div>
-            <input id="nombre" type="text" placeholder="Nombre">
+        <h1>Sorteo - Grupo 33</h1>
+        <div class="form-admin">
+            <input id="nombre" type="text" placeholder="Nombre de participante" autofocus>
             <button id="btn-agregar">Agregar</button>
             <button id="btn-borrarUlt">Borrar Ultimo</button>
             <button id="btn-limpiar">Limpiar Todos</button>
         </div>
-        <ul id="listado">
+        <div class="div-participantes">
+            <div class="list-participantes">
+                <p>Lista de participantes</p>
+                <div>
+                    <ul id="listado">
 
-        </ul>
-        <button id="btn-sortear" style="text-transform:uppercase">sortear</button>
-
-        <h2>Ganador:</h2>
-        <div id="ganador"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="div-ganador">
+                <p>¡Ganador!</p>
+                <p id="ganador"></p>
+            </div>
+        </div>
+        <div class="div-btn-sortear">
+            <button id="btn-sortear">SORTEAR</button>
+        </div>
     </section>
     <script src="JavaScript.js"></script>
 </body>
