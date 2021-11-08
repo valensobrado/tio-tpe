@@ -122,10 +122,20 @@ h1 {
 }
 
 .div-btn-sortear button {
-    font-size: 20px;
-    color: beige;
-    background-color: black;
+	transition-duration: 0.1s;
+    font-size: 18px;
+    color: white;
+    background-color: #5164a8;
     height: 35px;
     width: 130px;
-    border-radius: 5px;
+    cursor:pointer;
+    border:0.16em solid rgba(255,255,255, 1);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.div-btn-sortear button:hover {
+	transition-duration: 0.2s;
+    background-color: #2f3d6e;
+    color: white;
 }
