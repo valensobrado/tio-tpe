@@ -3,26 +3,48 @@
     padding: 0;
     box-sizing: content-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #413b4a;
+}
+
+h1 {
+	font-weight: 200;
+	padding-bottom: 20px;
+}
+
+h1:before {
+	content: '';
+	position: absolute;
+	width: 880px;
+	height: 1px;
+	top: 2.2em;
+	background-color: gray;
 }
 
 body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: beige;
+    background-color: #7c829f;
     height: 100vh;
 }
 
 section {
-    width: 800px;
+    width: 900px;
     height: 580px;
     padding: 20px;
+<<<<<<< HEAD
     background-color:beige;
     border: 2px solid black;
+=======
+    background-color:white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+>>>>>>> cfaec6142d002d6bea77e91c51d855270a601d75
 }
 
 h1 {
-  font-size: 40px;  
+	margin-left: 10px;
+	font-size: 40px;  
 }
 
 .form-admin {
@@ -31,47 +53,65 @@ h1 {
 }
 
 .form-admin input {
-    text-align: center;
+    text-align: left;
     height: 30px;
     width: 250px;
     margin-right: 5px;
-    background-color: beige;
+    background-color: #f2f1f1;
+    padding-left: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form-admin input:focus {
+	outline: none !important;
+	border: 1px solid #71afde;
 }
 
 .form-admin button {
     color: beige;
-    background-color: black;
+    background-color: #4CAF50; /* Green */
     height: 30px;
     margin: 0 5px;
     width: 110px;
     border-radius: 5px;
+    cursor:pointer;
+    border:0.16em solid rgba(255,255,255,0);
+}
+
+.form-admin button:hover {
+	transition-duration: 0.3s;
+	background-color: #2d7336; /* Green */
+    color: white;
+    border:0.16em solid rgba(255,255,255,255);
 }
 
 .div-participantes {
     display: flex;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .list-participantes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 35%;
+    align-items: left;
+    width: 60%;
+    margin-left: 10px;
 }
 
 .list-participantes p {
-    font-size: 25px;
-    text-align: center;
+    font-size: 24px;
+    text-align: left;
 }
 
 .list-participantes div {
-    background-color: beige;
-    border: 2px solid black;
+    background-color: #f2f1f1;
+    border: 1px solid gray;
     margin-top: 15px;
     overflow: scroll;
     width: 90%;
     height: 300px;
+    border-radius: 1px;
 }
 
 .list-participantes div ul {
@@ -81,7 +121,7 @@ h1 {
 
 .list-participantes div ul li {
     height: 25px;
-    font-size: 20px;
+    font-size: 17px;
     margin: 4px 0 4px 50px;
     list-style: decimal-leading-zero;
     text-transform: uppercase;
@@ -96,14 +136,14 @@ h1 {
 
 .div-ganador p:first-child {
     font-size: 60px;
-    font-weight: bold;
     margin-top: 60px;
 }
 
 .div-ganador p:last-child {
-    font-size: 45px;
-    margin-top: 60px;
+    font-size: 30px;
+    margin-top: 30px;
     text-transform: uppercase;
+    font-weight: 100;
 }
 
 .div-btn-sortear {
@@ -113,10 +153,20 @@ h1 {
 }
 
 .div-btn-sortear button {
-    font-size: 20px;
-    color: beige;
-    background-color: black;
+	transition-duration: 0.1s;
+    font-size: 18px;
+    color: white;
+    background-color: #5164a8;
     height: 35px;
     width: 130px;
-    border-radius: 5px;
+    cursor:pointer;
+    border:0.16em solid rgba(255,255,255, 1);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.div-btn-sortear button:hover {
+	transition-duration: 0.2s;
+    background-color: #2f3d6e;
+    color: white;
 }
