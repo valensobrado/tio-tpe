@@ -40,11 +40,20 @@ h1 {
 
 .form-admin button {
     color: beige;
-    background-color: black;
+    background-color: #4CAF50; /* Green */
     height: 30px;
     margin: 0 5px;
     width: 110px;
     border-radius: 5px;
+    cursor:pointer;
+    border:0.16em solid rgba(255,255,255,0);
+}
+
+.form-admin button:hover {
+	transition-duration: 0.3s;
+	background-color: #2d7336; /* Green */
+    color: white;
+    border:0.16em solid rgba(255,255,255,255);
 }
 
 .div-participantes {
