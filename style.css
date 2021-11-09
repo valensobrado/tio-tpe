@@ -149,7 +149,7 @@ h1 {
 .div-btn-sortear {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .div-btn-sortear button {
@@ -169,4 +169,10 @@ h1 {
 	transition-duration: 0.2s;
     background-color: #2f3d6e;
     color: white;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
 }
